@@ -29,7 +29,7 @@ pipeline {
             steps {
                 // Build your Docker image
                 script {
-                    docker.build("${IMAGE_NAME}:${IMAGE_TAG}", "-f JenkinsAssignment/dockerfile .")
+                    docker.build("${IMAGE_NAME}:${IMAGE_TAG}", "-f JenkinsAssignment/. .")
                 }
             }
         }
